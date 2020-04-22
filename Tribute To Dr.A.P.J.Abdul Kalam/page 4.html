@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <style>
+      body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+      }
+      .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      }
+      .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+      }
+      .sidebar a.active {
+      background-color: #4CAF50;
+      color: white;
+      }
+      .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+      }
+      div.content {
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 100%;
+      }
+      @media screen and (max-width: 700px) {
+      .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+      }
+      @media screen and (max-width: 400px) {
+      .sidebar a {
+      text-align: center;
+      float: none;
+      }
+      }
+      hr.solid {
+      border-top: 3px solid #bbb;
+      }
+      .mySlides {display:none;}
+   </style>
+   <body>
+      <div class="sidebar">
+         <a href="../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/Introduction%20Page.html">Home</a>
+         <a href="../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/page%202.html">Books</a>
+         <a href="../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/Page%203.html">Oaths</a>
+         <a class="active" href="../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/Page%204.html">Quotes</a>
+      </div>
+      <div class="content">
+         <div class="w3-content w3-display-container">
+            <img class="mySlides" src="../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/q1.jpg" style="width:100%">
+            <img class="mySlides" src="../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/q2.jpg" style="width:100%">
+            <img class="mySlides" src="../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/q3.jpg" style="width:100%">
+            <img class="mySlides" src="../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/q4.jpg" style="width:100%">
+            <img class="mySlides" src="../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/q5.jpg" style="width:100%">
+            <img class="mySlides" src="../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/q6.jpg" style="width:100%">
+            <img class="mySlides" src="../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/q7.jpg" style="width:100%">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+         </div>
+      </div>
+      </div>
+      <script>
+         var slideIndex = 1;
+         showDivs(slideIndex);
+         
+         function plusDivs(n) {
+           showDivs(slideIndex += n);
+         }
+         
+         function showDivs(n) {
+           var i;
+           var x = document.getElementsByClassName("mySlides");
+           if (n > x.length) {slideIndex = 1}
+           if (n < 1) {slideIndex = x.length}
+           for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+           }
+           x[slideIndex-1].style.display = "block";  
+         }
+      </script>
+   </body>
+</html>

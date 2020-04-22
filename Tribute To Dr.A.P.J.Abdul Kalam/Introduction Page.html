@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <style>
+         html, body {
+         width: 100%;
+         height: 100%;
+         }
+         p {
+         text-align: justify;
+         }
+         body {
+         margin: 0;
+         font-family: "Lato", sans-serif;
+         }
+         .sidebar {
+         margin: 0;
+         padding: 0;
+         width: 200px;
+         background-color: #f1f1f1;
+         position: fixed;
+         height: 100%;
+         overflow: auto;
+         }
+         .sidebar a {
+         display: block;
+         color: black;
+         padding: 16px;
+         text-decoration: none;
+         }
+         .sidebar a.active {
+         background-color: #4CAF50;
+         color: white;
+         }
+         .sidebar a:hover:not(.active) {
+         background-color: #555;
+         color: white;
+         }
+         div.content {
+         margin-left: 200px;
+         padding: 1px 16px;
+         height: 1000px;
+         }
+         @media screen and (max-width: 700px) {
+         .sidebar {
+         width: 100%;
+         height: auto;
+         position: relative;
+         }
+         .sidebar a {float: left;}
+         div.content {margin-left: 0;}
+         }
+         @media screen and (max-width: 400px) {
+         .sidebar a {
+         text-align: center;
+         float: none;
+         }
+         }
+         .header {
+         display: table;
+         position: relative;
+         width: 100%;
+         height: 100%;
+         background: url(../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/abd.jpg) no-repeat center center scroll;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         background-size: cover;
+         -o-background-size: cover;
+         }
+         .container {
+         margin-top: 50px;
+         }
+         .title {
+         color: white;
+         font-family: 'Montserrat', sans-serif;
+         font-size: 5em;
+         font-weight: bold;
+         }
+         .text-vertical-center {
+         display: table-cell;
+         text-align: center;
+         vertical-align: middle;
+         }
+         .margin-bottom {
+         margin-bottom: 30px;  
+         }
+         hr.solid {
+         border-top: 3px solid #bbb;
+         }
+      </style>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   </head>
+   <body>
+      <div class="sidebar">
+         <a class="active" href="../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/Introduction%20Page.html">Home</a>
+         <a href="../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/page%202.html">Books</a>
+         <a href="../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/Page%203.html">Oaths</a>
+         <a href="../Tribute%20To%20Dr.A.P.J.Abdul%20Kalam/Page%204.html">Quotes</a>
+      </div>
+      <div class="content">
+         <header class="header">
+            <div class="text-vertical-center">
+               <h1 class="title">A.P.J. Abdul Kalam</h1>
+            </div>
+         </header>
+         <div id="about" class="container">
+            <h1>About</h1>
+            <hr solid>
+            <p> In this Indian name, the name Avul Pakir Jainulabdeen is a patronymic, not a family name, and the person should be referred to by the given name, Abdul Kalam.</p>
+            <p>Avul Pakir Jainulabdeen Abdul Kalam 15 October 1931 – 27 July 2015) was an aerospace scientist who served as the 11th President of India from 2002 to 2007. He was born and raised in Rameswaram, Tamil Nadu and studied physics and aerospace engineering. He spent the next four decades as a scientist and science administrator, mainly at the Defence Research and Development Organisation (DRDO) and Indian Space Research Organisation (ISRO) and was intimately involved in India's civilian space programme and military missile development efforts. He thus came to be known as the Missile Man of India for his work on the development of ballistic missile and launch vehicle technology. He also played a pivotal organisational, technical, and political role in India's Pokhran-II nuclear tests in 1998, the first since the original nuclear test by India in 1974.</p>
+            <p>Kalam was elected as the 11th President of India in 2002 with the support of both the ruling Bharatiya Janata Party and the then-opposition Indian National Congress. Widely referred to as the "People's President", he returned to his civilian life of education, writing and public service after a single term. He was a recipient of several prestigious awards, including the Bharat Ratna, India's highest civilian honour.</p>
+            <p>While delivering a lecture at the Indian Institute of Management Shillong, Kalam collapsed and died from an apparent cardiac arrest on 27 July 2015, aged 83. Thousands including national-level dignitaries attended the funeral ceremony held in his hometown of Rameshwaram, where he was buried with full state honours.</p>
+         </div>
+      </div>
+   </body>
+</html>
